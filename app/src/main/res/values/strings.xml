@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Diligencia</string>
+    <string name="app_name">A Diligencia</string>
     <string name="texto1">lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_nam_et_egestas_nibh_quis_tristique_metus_quisque_euismod_mi_vitae_ultrices_sollicitudin_phasellus_pharetra_sodales_sapien_eget_sagittis_ipsum_fringilla_vel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et egestas nibh, quis tristique metus. Quisque euismod mi vitae ultrices sollicitudin. Phasellus pharetra sodales sapien, eget sagittis ipsum fringilla vel.</string>
     <string name="btnExp">Experimente!</string>
     <string name="hintEm">Email</string>
