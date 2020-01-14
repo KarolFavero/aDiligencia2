@@ -10,27 +10,27 @@
         layout="@layout/toolbar"
         android:background="@color/colorSecundary"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="99dp" />
+        tools:layout_editor_absoluteY="-16dp" />
 
-  <androidx.appcompat.widget.Toolbar
-      android:id="@+id/toolbar"
-      android:layout_width="412dp"
-      android:layout_height="61dp"
-      android:background="@color/colorPrimary"
-      android:minHeight="?attr/actionBarSize"
-      android:theme="?attr/actionBarTheme"
-      tools:layout_editor_absoluteX="-1dp"
-      tools:layout_editor_absoluteY="60dp" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="54dp" />
 
     <EditText
         android:id="@+id/cidade"
         android:layout_width="330dp"
         android:layout_height="45dp"
         android:background="@color/colorSecundary"
-        android:drawableLeft="@drawable/lupa"
+        android:drawableStart="@drawable/lupa"
         android:ems="20"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="67dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="61dp" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -39,7 +39,7 @@
         android:background="@color/colorPrimary"
         app:srcCompat="@drawable/filter"
         tools:layout_editor_absoluteX="357dp"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:layout_editor_absoluteY="61dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
