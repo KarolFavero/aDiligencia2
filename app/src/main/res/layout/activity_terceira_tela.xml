@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".terceiraTela">
 
-  <include layout="@layout/toolbar" />
+    <include
+        layout="@layout/toolbar"
+        android:background="@color/colorSecundary"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="99dp" />
 
   <androidx.appcompat.widget.Toolbar
       android:id="@+id/toolbar"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_width="412dp"
+      android:layout_height="61dp"
       android:background="@color/colorPrimary"
       android:minHeight="?attr/actionBarSize"
       android:theme="?attr/actionBarTheme"
-      tools:layout_editor_absoluteX="7dp"
+      tools:layout_editor_absoluteX="-1dp"
       tools:layout_editor_absoluteY="60dp" />
 
-  <com.google.android.gms.ads.AdView
-      android:id="@+id/adView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      tools:layout_editor_absoluteX="49dp"
-      tools:layout_editor_absoluteY="60dp" />
+    <EditText
+        android:id="@+id/cidade"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:background="@color/colorSecundary"
+        android:drawableLeft="@drawable/lupa"
+        android:ems="20"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@drawable/filter"
+        tools:layout_editor_absoluteX="357dp"
+        tools:layout_editor_absoluteY="65dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
