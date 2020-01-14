@@ -7,4 +7,6 @@
     <string name="btnEntrar">ENTRAR</string>
     <string name="textAcesse">Ou acesse com:</string>
     <string name="textCadastro">Não é cadastrado? Cadastre-se.</string>
+    <string name="cadastro_email">Insira o e-mail</string>
+    <string name="cadastro_senha">Insira sua senha</string>
 </resources>
