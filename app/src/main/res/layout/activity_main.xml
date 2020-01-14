@@ -82,7 +82,7 @@
         android:onClick="experimente"
         android:text="@string/btnExp"
         android:textAllCaps="false"
-        android:textColor="#BF271F"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
