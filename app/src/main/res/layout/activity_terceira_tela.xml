@@ -7,39 +7,55 @@
     tools:context=".terceiraTela">
 
     <include
+        android:id="@+id/include"
         layout="@layout/toolbar"
         android:background="@color/colorSecundary"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="412dp"
         android:layout_height="61dp"
+        android:layout_marginTop="181dp"
         android:background="@color/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="54dp" />
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />
 
     <EditText
         android:id="@+id/cidade"
         android:layout_width="330dp"
         android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="60dp"
         android:background="@color/colorSecundary"
         android:drawableStart="@drawable/lupa"
         android:ems="20"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="61dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="7dp"
         android:background="@color/colorPrimary"
-        app:srcCompat="@drawable/filter"
-        tools:layout_editor_absoluteX="357dp"
-        tools:layout_editor_absoluteY="61dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cidade"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/filter" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
