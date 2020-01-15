@@ -9,8 +9,14 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".telaCadastro"></activity>
-        <activity android:name=".terceiraTela" />
+        <activity
+            android:name=".menuDrawer"
+            android:label="@string/title_activity_menu_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".telaCadastro" />
+        <activity
+            android:name=".terceiraTela"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".segundaTela" />
         <activity
             android:name=".MainActivity"
