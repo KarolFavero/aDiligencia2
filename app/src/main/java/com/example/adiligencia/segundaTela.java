@@ -1,10 +1,10 @@
 package com.example.adiligencia;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class segundaTela extends AppCompatActivity {
 
@@ -18,4 +18,10 @@ public class segundaTela extends AppCompatActivity {
         Intent intent = new Intent(this, terceiraTela. class);
         startActivity(intent);
     }
+
+    public void cadastrar(View view) {
+        Intent intent = new Intent(this, telaCadastro.class);
+        startActivity(intent);
+    }
+
 }
