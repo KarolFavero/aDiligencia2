@@ -16,19 +16,16 @@
 
         <include
             android:id="@+id/include"
-            layout="@layout/toolbar"
-            android:background="@color/colorSecundary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            layout="@layout/toolbar" />
 
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="412dp"
+            android:layout_width="100dp"
             android:layout_height="101dp"
             android:layout_marginTop="181dp"
             android:background="@color/colorPrimary"
@@ -38,17 +35,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/include"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-
     </LinearLayout>
-
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"
@@ -57,5 +46,6 @@
         android:layout_gravity="start|left"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/menu_drawer" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
