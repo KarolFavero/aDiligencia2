@@ -33,7 +33,7 @@ public class telaCadastro extends AppCompatActivity {
                 String repitaSenhaString = repitaSenha.getText().toString();
 
                 if (nomeString.isEmpty() || emailString.isEmpty() || senhaString.isEmpty() || repitaSenhaString.isEmpty()) {
-                    String resultado = crud.insereDado(nomeString, emailString, senhaString);
+                    String resultado = "preencha todos os campos";
 
                     Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
 
@@ -43,6 +43,8 @@ public class telaCadastro extends AppCompatActivity {
                         Toast toast = Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 50);
                         toast.show();
+
+
                     } else {
                         String resultado = "As senhas não conferem";
                         Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
@@ -54,4 +56,6 @@ public class telaCadastro extends AppCompatActivity {
         });
     }
 
+
 }
+
