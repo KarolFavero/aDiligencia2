@@ -22,6 +22,10 @@ public class segundaTela extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void Tela_mapa(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
+    }
 
     public void login(View view) {
         EditText email = findViewById(R.id.email1);

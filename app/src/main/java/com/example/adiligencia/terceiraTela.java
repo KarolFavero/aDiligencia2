@@ -18,7 +18,7 @@ public class terceiraTela extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terceira_tela);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
@@ -27,7 +27,6 @@ public class terceiraTela extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
     }
-
 
     @Override
     public void onBackPressed() {
@@ -38,3 +37,5 @@ public class terceiraTela extends AppCompatActivity {
         }
     }
 }
+
+
