@@ -57,29 +57,32 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // Add a marker in Sydney and move the camera
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-29.7549941, -51.150283);
+        LatLng sao_leopoldo = new LatLng(-29.7549941, -51.150283);
         LatLng esteio = new LatLng(-29.8524632, -51.1845758);
-        mMap.addMarker(new MarkerOptions().position(esteio).title("Marker em Esteio").icon(BitmapDescriptorFactory.fromResource(R.drawable.whats)));
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker em São Leopoldo"));
+
+        mMap.addMarker(new MarkerOptions().position(esteio).title("(51) 99972-9864").icon(
+                BitmapDescriptorFactory.fromResource(R.drawable.whats)));
+        mMap.addMarker(new MarkerOptions().position(sao_leopoldo).title("São Leopoldo").icon(
+                BitmapDescriptorFactory.fromResource(R.drawable.whats)));
 
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sao_leopoldo));
+
 
         //setar o zoom do mapa
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(esteio, 12.0f));
 
-
         //mostra controles de zoom
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
+
         //adiciona linha rota
         mMap.addPolyline(new PolylineOptions()
-                .add(sydney, esteio)
+                .add(sao_leopoldo, esteio)
                 .width(5)
                 .color(Color.RED));
-        //adicion circulo
 
-
+        //adiciona circulo
         mMap.addCircle(
                 new CircleOptions()
                         .center(esteio)
@@ -87,5 +90,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         .strokeColor(Color.RED)
                         .fillColor(Color.argb(70, 150, 50, 50))
         );
+
+
     }
 }
