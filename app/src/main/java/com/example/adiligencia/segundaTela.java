@@ -45,7 +45,7 @@ public class segundaTela extends AppCompatActivity {
 
                 if (strEmail.equals(resEmail) && strsenha.equals(resSenha)) {
                     Toast.makeText(getApplicationContext(), "Seja bem-vindo.", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(this, terceiraTela.class);
+                    Intent intent = new Intent(this, MapsActivity.class);
                     startActivity(intent);
                 } else {
                     erro = true;
