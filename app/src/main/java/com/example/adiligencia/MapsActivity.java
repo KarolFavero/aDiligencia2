@@ -44,6 +44,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         final LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         super.onCreate(savedInstanceState);
@@ -62,7 +63,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         toggle.syncState();
 
         if (manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            Toast.makeText(this, "GPS is Enabled in your devide", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "O GPS está ativado no seu dispositivo", Toast.LENGTH_SHORT).show();
         } else {
             showGPSDisabledAlertToUser();
         }
