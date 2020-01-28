@@ -161,17 +161,29 @@
 
     <Button
         android:id="@+id/MapaExer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
         android:onClick="mapaexerci"
         android:text="MapaExerc"
-        app:layout_constraintBottom_toTopOf="@+id/cadastreButton"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/WebService"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebutton" />
+
+    <Button
+        android:id="@+id/WebService"
+        android:layout_width="119dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="41dp"
+        android:onClick="webService"
+        android:text="WebService"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MapaExer"
         app:layout_constraintTop_toBottomOf="@+id/googleButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
